@@ -1,3 +1,5 @@
+import bintray.Keys._
+
 sbtPlugin := true
 
 name := "blackbox-plugin"
@@ -5,6 +7,16 @@ name := "blackbox-plugin"
 organization := "com.blackboxsociety"
 
 scalaVersion := "2.10.3"
+
+publishMavenStyle := false
+
+bintrayPublishSettings
+
+repository in bintray := "sbt-plugins"
+
+licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
+
+bintrayOrganization in bintray := None
 
 resolvers += Resolver.url(
   "bintray-sbt-plugin-releases",
