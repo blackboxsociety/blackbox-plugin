@@ -18,7 +18,8 @@ object Build extends Build {
     .settings(
       name         := "blackbox-plugin",
       organization := "com.blackboxsociety",
-      scalaVersion := "2.11.0",
+      version      := "0.1.0",
+      scalaVersion := "2.10.0",
       sbtPlugin    := true,
       licenses     += ("MIT", url("http://opensource.org/licenses/MIT"))
     )
